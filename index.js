@@ -49,7 +49,7 @@ client.on('message', message => {
         return message.channel.send(`Thưa ngài <@` + `320103804248784896` + `> có người đang cần ngài`);
       }
       if(message.content.toLowerCase() == 'skai' && message.author.id !== '513211252277772290'){
-        return message.channel.send(`Gọi ngài <@` + `513211252277772290` + ` ạ>`);
+        return message.channel.send(`Gọi ngài <@` + `513211252277772290` + `> ạ`);
       }
       if(message.content.toLowerCase() == 'kuro' && message.author.id !== '429095688228438017'){
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
