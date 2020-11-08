@@ -48,9 +48,13 @@ client.on('message', message => {
       if(message.content.toLowerCase() == 'nam' && message.author.id !== '320103804248784896'){
         return message.channel.send(`Thưa ngài <@` + `320103804248784896` + `> có người đang cần ngài`);
       }
+      if(message.content.toLowerCase() == 'skai' && message.author.id !== '513211252277772290'){
+        return message.channel.send(`Gọi ngài <@` + `513211252277772290` + ` ạ>`);
+      }
       if(message.content.toLowerCase() == 'kuro' && message.author.id !== '429095688228438017'){
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
       }
+
 });
 
 // There's zero need to put something here. Discord.js uses process.env.CLIENT_TOKEN if it's available,
