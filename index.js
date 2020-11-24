@@ -43,7 +43,7 @@ client.on('message', message => {
         return message.channel.send(`Ngài Vim <@` + `503219544907710467` + `> có người đang gọi ạ`);
       }
       if(message.content.toLowerCase() == 'tiz' && message.author.id !== '542895780944412688'){
-        return message.channel.send(`Thưa ngài <@` + `542895780944412688` + `> có người cần sự hiện diện của ngài`);
+        return message.channel.send(`Thưa ngài <@` + `542895780944412688` + `> , <@` + `757256213984706692` + `> có người cần sự hiện diện của ngài`);
       }
       if(message.content.toLowerCase() == 'nam' && message.author.id !== '320103804248784896'){
         return message.channel.send(`Thưa ngài <@` + `320103804248784896` + `> có người đang cần ngài`);
