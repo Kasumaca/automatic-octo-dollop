@@ -55,7 +55,7 @@ client.on('message', message => {
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
       }
     if(message.content.toLowerCase() == 'miridatabase'){
-      const embed = new Discord.RichEmbed()
+      const embed = new Discord.MessageEmbed()
       .setDescription("[Genshin Impact Wiki/Database](https://genshin.honeyhunterworld.com/)\n" + 
                       "[Interactive Map EN](https://mapgenie.io/genshin-impact/maps/teyvat)\n" +
                       "[Interactive Map CN](https://yuanshen.site/)\n" +
