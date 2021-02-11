@@ -54,7 +54,22 @@ client.on('message', message => {
       if(message.content.toLowerCase() == 'kuro' && message.author.id !== '429095688228438017'){
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
       }
-
+    if(message.content.toLowerCase() == 'miridatabase'){
+      const embed = new Discord.RichEmbed()
+      .setDescription("[Genshin Impact Wiki/Database](https://genshin.honeyhunterworld.com/)\n" + 
+                      "[Interactive Map EN](https://mapgenie.io/genshin-impact/maps/teyvat)\n" +
+                      "[Interactive Map CN](https://yuanshen.site/)\n" +
+                      "[Promo Codes](https://www.gensh.in/events/promotion-codes)\n" +
+                      "Lịch [1](https://genshin-center.com/planner) [2](https://seelie.inmagi.com/)\n" +
+                      "Tính DMG [1](https://genshin-center.com/calculator) [2](https://genshinimpactcalculator.com/genshinCalc.html)\n" +
+                      "[Shop Ẩn](https://ptb.discord.com/channels/486201690140180491/771736820777222155/791794037660450856)\n" +
+                      "[Giả Lập Domain Drop](https://genshin.cc/artifact-rng)\n" +
+                      "[Phòng Thủ của quái](https://ptb.discord.com/channels/486201690140180491/771736820777222155/786973188424204318)\n" +
+                      "[Xếp Hạng Artifacts](https://drive.google.com/file/d/1bj-AVFkjZqFcop9NgkjWxnF8CrbkYHM9/view)\n" +
+                      "[Đủ thể loại Teambuild, Tier, Mechanic, vv](https://docs.google.com/spreadsheets/d/1s0G2SDIOp9WB7NRn3ABoRgsS_Qjid46g1-BswFrbTFY/edit#gid=2093095892)"
+      )
+      message.channel.send(embed)
+    }
 });
 
 // There's zero need to put something here. Discord.js uses process.env.CLIENT_TOKEN if it's available,
