@@ -8,7 +8,7 @@ client.on("ready", () => {
   console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`); 
 });
 
-client.on("message", message => {
+client.on("message", async message => {
   if (message.author.bot) return;
   // The process.env.PREFIX is your bot's prefix in this case.
   if (message.content.indexOf(process.env.PREFIX) !== 0) return;
