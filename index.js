@@ -25,7 +25,7 @@ client.on("message", async message => {
     message.channel.send('Meh.');
   }
 });
-client.on('message', message => {
+client.on('message', async message => {
     if(message.author.bot) return;
     if(message.content.toLowerCase() == 'huk' && message.author.id !== '486068016128327682'){
         return message.channel.send(`Thưa cậu chủ <@` + `486068016128327682` + `>`);
