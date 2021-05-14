@@ -2,6 +2,8 @@
 require('dotenv').config(); 
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const math = require('mathjs');
+const {RichEmbed} = require('discord.js');
 
 client.on("ready", () => {
 	client.user.setActivity("tiểu thư Luxen", {type: "WATCHING"}) 	
@@ -73,6 +75,22 @@ client.on('message', async message => {
       )
       message.channel.send(embed)
     }
+   if(message.content.toLowerCase() == 'miricalc'){
+         if (!args[0]) return message.channel.send('Please input a calculation.');
+	    let resp;
+	    try {
+		resp = math.eval(args.join(' '));
+	    } catch (e) {
+		return message.channel.send('Please input a valid calculation.');
+	    }
+
+	    const embed = new RichEmbed()
+		.setColor(0xffffff)
+		.setTitle('Máy Tính')
+		.addField('Nhập', `\`\`\`js\n${args.join('')}\`\`\``)
+		.addField('Kết quả', `\`\`\`js\n${resp}\`\`\``)
+	    message.channel.send({embed});
+   }
 });
 
 // There's zero need to put something here. Discord.js uses process.env.CLIENT_TOKEN if it's available,
