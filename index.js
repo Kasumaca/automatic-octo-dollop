@@ -3,7 +3,6 @@ require('dotenv').config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const math = require('mathjs');
-const {RichEmbed} = require('discord.js');
 
 client.on("ready", () => {
 	client.user.setActivity("tiểu thư Luxen", {type: "WATCHING"}) 	
@@ -72,19 +71,20 @@ client.on("message", async message => {
       )
       message.channel.send(embed)
     }
-         if(message.content.toLowerCase().includes('miricalc')){
-         	if (!args[0]) return message.channel.send('Hãy nhập phép tính');
+	const args2 = message.content.slice(prefix.length+4).trim().split(/ +/g);
+         if(message.content.includes('Miricalc')){
+         	if (!args2[0]) return message.channel.send('Hãy nhập phép tính');
 		    let resp;
 		    try {
-			resp = math.eval(args.join(' '));
+			resp = math.evaluate(args2.join(' '));
 		    } catch (e) {
 			return message.channel.send('Hãy nhập phép tính hợp lệ');
 		    }
 
-	 	   const embed = new RichEmbed()
+	 	   const embed = new Discord.MessageEmbed()
 			.setColor(0xffffff)
 			.setTitle('Máy Tính')
-			.addField('Nhập', `\`\`\`js\n${args.join('')}\`\`\``)
+			.addField('Nhập', `\`\`\`js\n${args2.join('')}\`\`\``)
 			.addField('Kết quả', `\`\`\`js\n${resp}\`\`\``)
 	  	  message.channel.send({embed})
    	}
