@@ -75,7 +75,7 @@ client.on('message', async message => {
       )
       message.channel.send(embed)
     }
-   if(message.content.toLowerCase() == 'miricalc'){
+   if(message.content.toLowerCase().includes('miricalc')){
          if (!args[0]) return message.channel.send('Please input a calculation.');
 	    let resp;
 	    try {
