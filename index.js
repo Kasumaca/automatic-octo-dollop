@@ -23,9 +23,6 @@ client.on("message", async message => {
   if (command === 'blah') {
     message.channel.send('Meh.');
   }
-});
-client.on('message', async message => {
-    if(message.author.bot) return;
     if(message.content.toLowerCase() == 'huk' && message.author.id !== '486068016128327682'){
         return message.channel.send(`Thưa cậu chủ <@` + `486068016128327682` + `>`);
       }
@@ -75,22 +72,22 @@ client.on('message', async message => {
       )
       message.channel.send(embed)
     }
-   if(message.content.toLowerCase().includes('miricalc')){
-         if (!args[0]) return message.channel.send('Please input a calculation.');
-	    let resp;
-	    try {
-		resp = math.eval(args.join(' '));
-	    } catch (e) {
-		return message.channel.send('Please input a valid calculation.');
-	    }
+         if(message.content.toLowerCase().includes('miricalc')){
+         	if (!args[0]) return message.channel.send('Hãy nhập phép tính');
+		    let resp;
+		    try {
+			resp = math.eval(args.join(' '));
+		    } catch (e) {
+			return message.channel.send('Hãy nhập phép tính hợp lệ');
+		    }
 
-	    const embed = new RichEmbed()
-		.setColor(0xffffff)
-		.setTitle('Máy Tính')
-		.addField('Nhập', `\`\`\`js\n${args.join('')}\`\`\``)
-		.addField('Kết quả', `\`\`\`js\n${resp}\`\`\``)
-	    message.channel.send({embed});
-   }
+	 	   const embed = new RichEmbed()
+			.setColor(0xffffff)
+			.setTitle('Máy Tính')
+			.addField('Nhập', `\`\`\`js\n${args.join('')}\`\`\``)
+			.addField('Kết quả', `\`\`\`js\n${resp}\`\`\``)
+	  	  message.channel.send({embed})
+   	}
 });
 
 // There's zero need to put something here. Discord.js uses process.env.CLIENT_TOKEN if it's available,
