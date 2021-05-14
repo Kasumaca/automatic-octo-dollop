@@ -71,7 +71,7 @@ client.on("message", async message => {
       )
       message.channel.send(embed)
     }
-	const args2 = message.content.slice(prefix.length+4).trim().split(/ +/g);
+	const args2 = message.content.slice(process.env.PREFIX.length+4).trim().split(/ +/g);
          if(message.content.includes('Miricalc')){
          	if (!args2[0]) return message.channel.send('Hãy nhập phép tính');
 		    let resp;
