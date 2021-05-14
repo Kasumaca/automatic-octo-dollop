@@ -80,7 +80,7 @@ client.on("message", async message => {
 		    } catch (e) {
 			return message.channel.send('Hãy nhập phép tính hợp lệ');
 		    }
-	  	  message.channel.send({resp})
+	  	  message.channel.send(resp)
    	}
 });
 
