@@ -80,13 +80,7 @@ client.on("message", async message => {
 		    } catch (e) {
 			return message.channel.send('Hãy nhập phép tính hợp lệ');
 		    }
-
-	 	   const embed = new Discord.MessageEmbed()
-			.setColor(0xffffff)
-			.setTitle('Máy Tính')
-			.addField('Nhập', `\`\`\`js\n${args2.join('')}\`\`\``)
-			.addField('Kết quả', `\`\`\`js\n${resp}\`\`\``)
-	  	  message.channel.send({embed})
+	  	  message.channel.send({resp})
    	}
 });
 
