@@ -25,8 +25,8 @@ client.on("message", async message => {
 });
 client.on("message", async message => {
 	if (message.author.bot) return;
-	const args = message.content.slice(prefix.length).trim().split(/ +/g);
-	const args2 = message.content.slice(prefix.length+4).trim().split(/ +/g);
+	const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
+	const args2 = message.content.slice(process.env.PREFIX.length+4).trim().split(/ +/g);
     if(message.content.toLowerCase() == 'huk' && message.author.id !== '486068016128327682'){
         return message.channel.send(`Thưa cậu chủ <@` + `486068016128327682` + `>`);
       }
