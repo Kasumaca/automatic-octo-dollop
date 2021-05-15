@@ -17,11 +17,8 @@ client.on("message", async message => {
   // This is the usual argument parsing we love to use.
   const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
-  // And our 2 real basic commands!
-  if (command === 'blah') {
-    message.channel.send('Meh.');
-  }
+  const args2 = message.content.slice(process.env.PREFIX.length+4).trim().split(/ +/g);
+	
     if(message.content.toLowerCase() == 'huk' && message.author.id !== '486068016128327682'){
         return message.channel.send(`Thưa cậu chủ <@` + `486068016128327682` + `>`);
       }
@@ -71,7 +68,6 @@ client.on("message", async message => {
       )
       message.channel.send(embed)
     }
-	const args2 = message.content.slice(process.env.PREFIX.length+4).trim().split(/ +/g);
          if(message.content.includes('Miricalc')){
          	if (!args2[0]) return message.channel.send('Hãy nhập phép tính');
 		    let resp;
