@@ -54,6 +54,12 @@ client.on("message", async message => {
       if(message.content.toLowerCase() == 'kuro' && message.author.id !== '429095688228438017'){
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
       }
+      if(message.content.toLowerCase() == 'mel' && message.author.id !== '501995663840509964'){
+        return message.channel.send(`<@` + `501995663840509964` + `>-san~`);
+      }
+      if(message.content.toLowerCase() == 'meo' && message.author.id !== '501995663840509964'){
+        return message.channel.send(`<@` + `501995663840509964` + `>-san~`);
+      }
       if(message.content.toLowerCase().startsWith('miriping')) {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
