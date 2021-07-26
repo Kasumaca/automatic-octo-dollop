@@ -36,6 +36,9 @@ client.on("message", async message => {
       if(message.content.toLowerCase() == 'lox' && message.author.id !== '486068224333447168'){
         return message.channel.send(`Thưa ngài Lox <@` + `486068224333447168` + `> có người gọi?`);
       }
+      if(message.content.toLowerCase() == 'lõ' && message.author.id !== '486068224333447168'){
+        return message.channel.send(`Ông Lõ <@` + `486068224333447168` + `> có người gọi`);
+      }
       if(message.content.toLowerCase() == 'huyz' && message.author.id !== '528365331639697419'){
         return message.channel.send(`Thưa ngài Huyz <@` + `528365331639697419` + `>, có người đang cần ngài hiện về`);
       }
