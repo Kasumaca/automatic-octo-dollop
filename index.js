@@ -6,9 +6,7 @@ const math = require('mathjs');
 
 client.on("ready", () => {
 	client.user.setActivity("tiểu thư Luxen", {type: "WATCHING"}) 	
-  console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`); 
-    const role = msg.guild.roles.cache.get("767339854073167873")
-    role.setColor('#0x4908');       
+  console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`);     
 });
 
 client.on("message", async message => {
