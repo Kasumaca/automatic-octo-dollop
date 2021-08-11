@@ -98,7 +98,7 @@ client.on("message", async message => {
 	if(message.content.toLowerCase() == 'test'){
 	    if(!message.guild) return;
 	    if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES')) return;
-	    var colors = ['#8585ff','#fff681','#a073fd','#fd73b9'];
+	    var colors = ['#ff0000','#ffa500','#ffff00','#008000', '#0000ff', '#4b0082', '#ee82ee', '#f46b38'];
 	    for(let i = 0; i<= colors.length;i++){
 	    var role = message.guild.roles.cache.find(role => role.name === "color4");
 	    setInterval(() => {
