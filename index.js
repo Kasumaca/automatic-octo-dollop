@@ -95,7 +95,7 @@ client.on("message", async message => {
 		    }
 	  	  message.channel.send(resp)
    	}
-	if(message.content.toLowerCase() == 'test'){
+	/*if(message.content.toLowerCase() == 'test'){
 	    if(!message.guild) return;
 	    if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES')) return;
 	    var colors = ['#ff0000','#ffa500','#ffff00','#008000', '#0000ff', '#4b0082', '#ee82ee', '#f46b38'];
@@ -107,7 +107,7 @@ client.on("message", async message => {
 		})
 	    }, 1000);
 	  }
-	}
+	}*/
 });
 
 // There's zero need to put something here. Discord.js uses process.env.CLIENT_TOKEN if it's available,
