@@ -8,7 +8,17 @@ client.on("ready", () => {
 	client.user.setActivity("tiểu thư Luxen", {type: "WATCHING"}) 	
   console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`); 
 });
+client.on('ready', () => {
+  var colors = ['#8585ff','#fff681','#a073fd','#fd73b9'];
+    var random = Math.floor(Math.random() * colors.length);
+    var role = message.guild.roles.find("name", "color4");
+    setInterval(() => {
+        role.edit({
+            color: colors[random]
+        })
+    }, 5000);
 
+});
 client.on("message", async message => {
   if (message.author.bot) return;
   // The process.env.PREFIX is your bot's prefix in this case.
@@ -19,9 +29,6 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
   // And our 2 real basic commands!
-  if (command === 'blah') {
-    message.channel.send('Meh.');
-  }
 });
 client.on("message", async message => {
 	if (message.author.bot) return;
