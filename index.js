@@ -105,7 +105,7 @@ client.on("message", async message => {
 		role.edit({
 		    color: colors[i]
 		})
-	    }, 60000);
+	    }, 5000);
 	  }
 	}
 });
