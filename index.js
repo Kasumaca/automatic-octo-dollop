@@ -7,13 +7,10 @@ const math = require('mathjs');
 client.on("ready", () => {
 	client.user.setActivity("tiểu thư Luxen", {type: "WATCHING"}) 	
   console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`); 
-});
-client.on('ready', () => {
     const role = msg.guild.roles.cache.get("767339854073167873")
     role.setColor('#0x4908');       
 });
 
-});
 client.on("message", async message => {
   if (message.author.bot) return;
   // The process.env.PREFIX is your bot's prefix in this case.
