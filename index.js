@@ -9,14 +9,9 @@ client.on("ready", () => {
   console.log(`Mirianne đã sẵn sàng, với ${client.users.size} users, trong ${client.channels.size} channels của ${client.guilds.size} guilds.`); 
 });
 client.on('ready', () => {
-  var colors = ['#8585ff','#fff681','#a073fd','#fd73b9'];
-    var random = Math.floor(Math.random() * colors.length);
-    var role = message.guild.roles.find("name", "color4");
-    setInterval(() => {
-        role.edit({
-            color: colors[random]
-        })
-    }, 5000);
+    const role = msg.guild.roles.cache.get("767339854073167873")
+    role.setColor('#0x4908');       
+});
 
 });
 client.on("message", async message => {
