@@ -58,7 +58,7 @@ client.on("message", async message => {
         return message.channel.send(`<@` + `501995663840509964` + `>-san~`);
       }
       if(message.content.toLowerCase() == 'mirinewember'){
-        return message.channel.send("```zF_TXN
+        return message.channel.send(`zF_TXN
 B9pU1z
 QetboE
 1PYVB3
@@ -152,9 +152,9 @@ eSpXd3
 Y-m7bT
 ftNIWP
 1Xhzay
-```");
-      if(message.content.toLowerCase() == 'meo' && message.author.id !== '501995663840509964'){
-        return message.channel.send("```Ghlf5y
+`);
+      if(message.content.toLowerCase() == 'ember'){
+        return message.channel.send(`Ghlf5y
 CJRny-
 yXw4m1
 05ymoV
@@ -206,7 +206,7 @@ jUS79F
 29) rwNAKA
 30) urj9vT
 31) Z6iZQ7
-32) QM7UGY```");
+32) QM7UGY`);
       }
 
       }
