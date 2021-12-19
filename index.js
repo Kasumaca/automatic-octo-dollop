@@ -54,14 +54,161 @@ client.on("message", async message => {
       if(message.content.toLowerCase() == 'kuro' && message.author.id !== '429095688228438017'){
         return message.channel.send(`Triệu tập ngài <@` + `429095688228438017` + `>`);
       }
-      if(message.content.toLowerCase() == 'mel' && message.author.id !== '501995663840509964'){
-        return message.channel.send(`<@` + `501995663840509964` + `>-san~`);
-      }
       if(message.content.toLowerCase() == 'meo' && message.author.id !== '501995663840509964'){
         return message.channel.send(`<@` + `501995663840509964` + `>-san~`);
       }
-      if(message.content.toLowerCase() == '6' && message.author.id !== '822680036393615390'){
-        return message.channel.send(`Chị <@` + `822680036393615390` + `> oi~`);
+      if(message.content.toLowerCase() == 'mirinewember'){
+        return message.channel.send("```zF_TXN
+B9pU1z
+QetboE
+1PYVB3
+FLcoAt
+O5I-vp
+E2-IOK
+9tAhP8
+RdgsyD
+9epdAg
+1LY-AK
+JEHlGd 
+bAdjmX
+FPyAA3
+AAn4kD
+nR37nY
+LftDf8
+pNxfxK
+9Qt4Je 
+E_aWuT 
+zqYnnU 
+o5Sa2r 
+PQURtx 
+Y3CnXi 
+Yy1DRA
+9rfXuc
+i1p36k
+ttvEU0
+TGocb5
+1gXnJH
+g4Mh-f
+j-8X_o 
+OSiz_3 
+tpU4uT 
+mSqqMz 
+Bj96ho
+cVgLy4
+xanW9r
+mDbyN2
+ETHROL
+y_LLE9
+5Psbnh
+eiwSLh 
+BKJfs1 
+u1roB3 
+U359-G 
+EQhQiv 
+WM2vzB
+FF_z_Q 
+1AvQCW 
+FRN0w6 
+8Mib8i 
+x5Z3iZ 
+nGqI9R 
+05s8BF 
+J0LNGs 
+wsHI2N 
+UYp1Qe
+CCpHV6
+-ZUaBf
+7Bv_L3
+aInpfb 
+qtMne6 
+-uqynb 
+G3R6s6 
+CV2R8m
+Kd-c1q
+P7RiIM
+7rQ5OB
+BJ9KTw
+up6n_E
+4XYnvC
+gldEGI
+U-k9_t
+ixr0Am
+tNc_C9
+NROk2p
+CuOY9z
+A-85FG
+1MDBr0
+5pQOkU
+9mGnXz
+Bf9flA
+KAp7z8
+GBalWX
+52cFaQ
+uvK2FL
+XpLile
+8nVHvM
+03XJTt
+eSpXd3
+Y-m7bT
+ftNIWP
+1Xhzay
+```");
+      if(message.content.toLowerCase() == 'meo' && message.author.id !== '501995663840509964'){
+        return message.channel.send("```Ghlf5y
+CJRny-
+yXw4m1
+05ymoV
+3hxmsv
+xOrmmk
+qB-s1-
+ppMbgf
+IcijbL
+ATTvKy
+iat4Kx
+owy9r7
+xZN6sM
+vqakMG
+-ecEuO
+OQz706
+8gJS5r
+fMEWSB
+nEeA5f
+jUS79F
+4LTCiR
+1) LWYj0s
+2) jMxBxy
+3) cvJc6
+4) WQ3RJt
+5) 60Nk6u
+6) UYeTDY
+7) AB-kRR
+8) ACwT7e
+9) 8v7ZE4 
+10) sUBF8
+11) GVo-dn
+12) ti9hg4
+13) 1lAGFX
+14) G1WyuY
+15) mIhiRM
+16) K-iWlm
+17) bWjwVz
+18) ac2fzF
+19) ifHcml
+20) 9cZS44
+21) 419gLT
+22) ZqALd
+23) kVvGFz
+24) yAXL-a
+25) F1SQnB
+26) 2tOI7V
+27) cAxFGJ
+28) qP1KaA
+29) rwNAKA
+30) urj9vT
+31) Z6iZQ7
+32) QM7UGY```");
+      }
+
       }
       if(message.content.toLowerCase().startsWith('miriping')) {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
