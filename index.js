@@ -153,8 +153,9 @@ Y-m7bT
 ftNIWP
 1Xhzay
 `);
-      if(message.content.toLowerCase() == 'ember'){
-        return message.channel.send(`Ghlf5y
+      }
+	if(message.content.toLowerCase() == 'ember'){
+          return message.channel.send(`Ghlf5y
 CJRny-
 yXw4m1
 05ymoV
@@ -207,6 +208,7 @@ jUS79F
 30) urj9vT
 31) Z6iZQ7
 32) QM7UGY`);
+	}
       if(message.content.toLowerCase().startsWith('miriping')) {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
